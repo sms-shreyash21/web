@@ -1,0 +1,199 @@
+
+        body
+        {
+            width:500px;
+            border:2px solid black;
+            margin:auto;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .left
+        {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+            margin-left: 20px;
+        }
+        .t1 h4
+        {
+            background-color: orangered;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 0px;
+            color: #c21313;
+            word-spacing: 25px;
+            font-size: 20px;
+
+        }
+        .t1 h3
+        {
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 20px;
+        }
+        .t2 h3
+        {
+            text-align: center;
+            margin-bottom: 0px;
+            margin-top: 2px;
+            word-spacing: 8px;
+            font-family: 'Source Sans Pro', sans-serif;
+            color:#c21313;
+            font-size: 22px;
+        }
+        .t2 h4
+        {
+            text-align: center;
+            margin-top: -9px;
+            background-color:#248a1e;
+            font-family: 'Source Sans Pro', sans-serif;
+            word-spacing: 5px;
+            font-size: 25px;
+            padding:10px;
+            margin-bottom: 5px;
+           
+        }
+        .date
+        {
+            transform-origin: 0 0;
+            transform: rotate(270deg);
+            position: absolute;
+            text-align: center;
+            padding-left: 80px;
+            margin-left: 20px;
+            font-size: 12px;
+        }
+        pre
+        {
+            text-align: left;
+            font-size: 14px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .t3 img
+        {
+            width:300px;
+            margin-left: 80px;
+            margin-bottom: 0px;
+        }
+        .t3 h5
+        {
+            margin-top: -6px;
+            margin-left: 80px;
+            margin-bottom: 5px;
+        }
+        .t4 
+        {
+        display: flex;
+        flex-direction: row;
+        }
+        .t4 img
+        {
+            width:120px;
+            margin-left: 200px;
+        }
+        .t4 p
+        {
+            transform-origin: 0 0;
+            transform: rotate(270deg);
+            margin-top: 20px;
+            margin-left: 20px;
+            text-align: center;
+        }
+        
+        .t5 h2
+        {
+            margin-top:2px;
+            padding: 2px;
+            text-align: center;
+            font-size: 20px;   
+            margin-bottom: 0px;
+         }
+         .t5 span
+         {
+            color:#c21313;
+            margin-top:2px;
+            padding: 2px;
+            text-align: center;
+            font-size: 20px;   
+            margin-bottom: 0px;
+         }
+         .t6 h1
+         {
+            text-align: center;
+            word-spacing: 10px;
+            margin-top: -15px;
+            padding:20px;
+            margin-bottom: 0px;
+        }
+        .t7 span,.t10 span
+        {
+            color:#c21313;
+        }
+        .t7 h1,.t10 h1
+        {
+            text-align: center;
+            word-spacing:5px;
+            margin-top: -5px;
+            padding:5px;
+        }
+        .t8 
+        {
+            display:flex;
+            margin-top:15px;
+            margin-bottom: -38px;
+            margin-left: 0px;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            border-top: 2px black dashed;  
+        }
+       .t8 span
+          {
+                margin-left: 40px;
+                margin-top: 2px;
+                text-align: center;
+                padding:2px;
+          }
+       
+          .t8 img
+          {
+            margin-left: 0px;
+
+          }
+        .t9
+        {
+            display:flex;
+            flex-direction: row;
+            margin-top: 0px;
+            padding: 10px;
+        }
+        #sak
+        {
+            margin:10px;
+        }
+        #sc
+        {
+            margin-top: 100px;
+            height: 75px;
+            margin-left: 30px;
+        }
+        .t9 pre
+        {
+            text-align: left;
+            font-size: 10px;
+            margin-left: -45px;
+            margin-top: 10px;
+        }
+        .container
+        {
+            border-top: 2px solid #c21313;
+            border-bottom: 2px solid #c21313;
+        }
+        .t9 h1
+        {
+            margin-left:50px;
+            margin-top:50px;
+            margin-bottom: 0px;
+        }

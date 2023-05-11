@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Calculator</title>
+		<style>
+			.bu1 {
+				background-color: brown;
+				color: white;
+  				padding: 15px 32px;
+				  border: none;
+			}
+			.bu2 {
+				background-color:slateblue;
+				color: white;
+  				padding: 15px 32px;
+				  border: none;
+			}
+			.bu3 {
+				background-color:chocolate;
+				color: white;
+  				padding: 15px 32px;
+				  border: none;
+			}
+			.bu4 {
+				background-color:coral;
+				color: white;
+  				padding: 15px 32px;
+				 border: none;
+			}
+			
+
+		</style>
+    </head>
+
+    <body >
+        <form style="text-align: center; ">
+            Enter 1st input :
+            <input type="number" id="first" name="firt"><br><br>
+            Enter 2nd input :
+            <input type="number" id="second" name="second"><br><br>
+           
+            <button type="button" class="bu1" onclick="add()">Add</button>
+            <button type="button" class="bu2" onclick="sub()">Subtract</button>
+            <button type="button" class="bu3" onclick="mul()">Multiply</button>
+            <button type="button" class="bu4" onclick="div()">Divide</button><br><br>
+			Output :
+            <input type="text" id="op" name="op"><br><br>
+        </form>
+
+        <!-- <script type="text/javascript">
+            function add(){
+                document.getElementById("op").value=document.getElementById("first").value + document.getElementById("second").value;
+				
+            }
+
+            function sub(){
+                document.getElementById("op").value=document.getElementById("first").value - document.getElementById("second").value;
+            }
+
+            function mul(){
+                document.getElementById("op").value=document.getElementById("first").value * document.getElementById("second").value;
+            }
+
+            function div(){
+                document.getElementById("op").value=document.getElementById("first").value / document.getElementById("second").value;
+            }
+
+        </script> -->
+		<script type="text/javascript">
+            function add(){
+                document.getElementById("op").value=parseInt(document.getElementById("first").value) + parseInt(document.getElementById("second").value);
+            }
+
+            function sub(){
+                document.getElementById("op").value=parseInt(document.getElementById("first").value) - parseInt(document.getElementById("second").value);
+            }
+
+            function mul(){
+                document.getElementById("op").value=parseInt(document.getElementById("first").value) * parseInt(document.getElementById("second").value);
+            }
+
+            function div(){
+                document.getElementById("op").value=parseInt(document.getElementById("first").value) / parseInt(document.getElementById("second").value);
+            }
+
+        </script>
+    </body>
+</html>

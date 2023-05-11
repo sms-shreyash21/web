@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+main{
+    background: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: minmax(auto, 425px);
+    box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+
+main .result{
+    color: hsl(241, 100%, 89%);
+    background: linear-gradient(hsl(252,100%,67%), hsl(241, 81%, 54%));
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 3rem;
+    padding-top: 1.5rem;
+    /* -webkit-border-radius: 0 0 1.5rem 1.5rem;
+    -moz-border-radius: 0 0 1.5rem 1.5rem;
+    -ms-border-radius: 0 0 1.5rem 1.5rem;
+    -o-border-radius: 0 0 1.5rem 1.5rem; */
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+.result__heading{
+    font-size: (1.125rem);
+}
+.result__score{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin: 1.5rem 0;
+    /* -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; */
+    border-radius: 50%;
+}
+.result__score-point{
+    color: hsl(0, 0%, 100%);
+    font-size: 3.75rem;
+    font-weight: 800;
+    line-height: 60px;
+}
+.result__score-of{
+    font-size: 0.875rem;
+}
+.result__subheading{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+
+main .summary{
+    color: hsl(224, 30%, 27%);
+    padding: 1.5rem;
+}
+.summary__heading{
+    font-size: 1.25rem;
+}
+.summary__list{
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    list-style-type: none;
+}
+.summary__list .summary__item{
+    background: hsla(39, 100%, 56%,.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem; */
+    border-radius: .3rem;
+}
+.summary__list #summary__item1{
+    color: hsl(0, 100%, 67%);
+    background: hsla(0, 100%, 67%, .05);
+}
+.summary__list #summary__item2{
+    color: hsl(39, 100%, 56%);
+    background: hsla(39, 100%, 56%, .05);
+}
+.summary__list #summary__item3{
+    color: hsl(166, 100%, 37%);
+    background: hsla(166, 100%, 37%, .05);
+}
+.summary__list #summary__item4{
+    color: hsl(234, 85%, 45%);
+    background: hsla(234, 85%, 45%, .05);
+}
+.summary__icon-container{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+.summary .summary__score{
+    color: hsla(224, 30%, 27%, .5);
+}
+.summaryscore .summaryscore-point{
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    margin-right: .25rem;
+}
+.summary button{
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    background: hsl(224, 30%, 27%);
+    font-size: 1.125rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    padding: .75rem 0;
+    outline: none;
+    border: none;
+    /* -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem; */
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+.summary button:hover{
+    background: linear-gradient(hsl(252,100%,67%), hsl(241, 81%, 54%));
+}
+
+
+footer{
+    font-size: 0.875rem;
+    text-align: center;
+    margin: 3rem 0 1.5rem 0;
+}
+footer a{
+    color: hsl(0, 100%, 67%);
+}
+footer a:hover{
+    text-decoration: none;
+}
+
+
+@media(min-width: 750px){
+    body{
+        font-size: 1.125rem;
+    }
+    main{
+        grid-template-columns: minmax(auto, 350px) minmax(auto, 350px);
+        grid-template-rows: 1fr;
+        /* -webkit-border-radius: 1.5rem;
+        -moz-border-radius: 1.5rem;
+        -ms-border-radius: 1.5rem;
+        -o-border-radius: 1.5rem; */
+        border-radius: 1.5rem;
+    }
+    main .result{
+        padding-top: 3rem;
+        /* -webkit-border-radius: 1.5rem;
+        -moz-border-radius: 1.5rem;
+        -ms-border-radius: 1.5rem;
+        -o-border-radius: 1.5rem; */
+        border-radius: 1.5rem;
+    }
+    main .summary{
+        padding: 3rem;
+    }
+}

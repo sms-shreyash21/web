@@ -1,0 +1,52 @@
+body{
+    background-image: url("nat.jpg");
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-size: 1180px;
+    margin: 20px;
+    
+}
+ul{
+    display:flex;
+    list-style-type: none;
+    
+}
+ul li{
+    float: left;
+    display: block;
+    /*background-color: chocolate;*/
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+ul li:hover{
+    background-color: brown;
+    color: white;
+}
+.box{
+    width: 400px;
+    /* margin-left: 40px;
+    margin-top: 40px; */
+    padding: 20px 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: brown;
+    position: absolute;
+}
+
+.box1{
+    width: 400px;
+    /* margin-right: 40px;
+    margin-top: 40px; */
+    padding: 20px 20px;
+    color: white;
+    border-radius: 10px;
+    float: right;
+    background-color: brown;
+    position: absolute;
+}
+button{
+    margin-top: 300px;
+    
+}

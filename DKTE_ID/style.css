@@ -1,0 +1,38 @@
+body{
+    width:800px;
+    border:2px solid black;
+    margin:auto;
+    font-family: serif;
+}
+.dkte{
+    display: flex;
+
+}
+.logo{
+    margin-left: 20px;
+}
+.name2{
+    margin-top: -15px;
+}
+.name3{
+    margin-top: -15px;
+}
+.dktename{
+    text-align: center;
+    margin-left: 80px;
+}
+.details{
+    display: flex;
+}
+.shreyash{
+    margin-left: 20px;
+    border: 2px solid black;
+}
+.info{
+    margin-left: 20px;
+}
+.n1 {
+    color: darkblue;
+    
+}
+hr{}

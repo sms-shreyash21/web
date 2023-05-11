@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Results summary component | Frontend Mentor</title>
+</head>
+
+<body>
+  <main>
+    <section class="result">
+      <h1 class="result__heading">Your Result</h1>
+      <div class="result__score">
+        <span class="result__score-point">76</span>
+        <span class="result__score-of">of 100</span>
+      </div>
+      <h2 class="result__subheading">Great</h2>
+      <p class="resulttext">You scored higher than <span class="resulttext-higher">65</span>% of the people who have
+        taken these tests.</span>
+    </section>
+    <section class="summary">
+      <h2 class="summary__heading">Summary</h2>
+      <ul class="summary__list">
+        <li class="summary__item" id="summary__item1">
+          <div class="summary__icon-container">
+            <img src="./assets/images/icon-reaction.svg" alt="" class="summary__icon">
+            <p class="summary__text">Reaction</p>
+          </div>
+          <span class="summaryscore"><span class="summaryscore-point">80</span> / 100</span>
+        </li>
+        <li class="summary__item" id="summary__item2">
+          <div class="summary__icon-container">
+            <img src="./assets/images/icon-memory.svg" alt="" class="summary__icon">
+            <p class="summary__text">Memory</p>
+          </div>
+          <span class="summaryscore"><span class="summaryscore-point">92</span> / 100</span>
+        </li>
+        <li class="summary__item" id="summary__item3">
+          <div class="summary__icon-container">
+            <img src="./assets/images/icon-verbal.svg" alt="" class="summary__icon">
+            <p class="summary__text">Verbal</p>
+          </div>
+          <span class="summaryscore"><span class="summaryscore-point">61</span> / 100</span>
+        </li>
+        <li class="summary__item" id="summary__item4">
+          <div class="summary__icon-container">
+            <img src="./assets/images/icon-visual.svg" alt="" class="summary__icon">
+            <p class="summary__text">Visual</p>
+          </div>
+          <span class="summaryscore"><span class="summaryscore-point">72</span> / 100</span>
+        </li>
+      </ul>
+      <button type="button" onclick="location.reload()">Continue</button>
+    </section>
+  </main>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
+      Mentor</a>.
+    Coded by <a href="https://rockybarua.netlify.app" target="_blank" rel="noopener">Rocky</a>.
+  </footer>
+</body>
+
+</html>

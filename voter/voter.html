@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Registration Form</title>
+    <script>
+        function validateForm() {
+            
+            // Validate age as a positive integer
+            var dobInput = document.getElementById("dob");
+            var dob = new Date(dobInput.value);
+            var today = new Date();
+            var age = today.getFullYear() - dob.getFullYear();
+            var monthDiff = today.getMonth() - dob.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
+                age--;
+            }
+            
+            if (age < 18) {
+                alert("Age must be greater than 18.");
+                return false;
+            }
+            // Mobile number validation
+            var mob = document.forms["voterForm"]["mob"].value;
+            var mobstr = mob.toString();
+            if(mobstr.length != 10){
+                alert("Enter valid Mobile number.")
+                return false;
+            }
+            
+
+            // All validations passed
+            return true;
+        }
+    </script>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-image: url('voter.png');
+        }
+        form{
+            
+            
+            width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.5);
+            text-align: center ;
+            margin: auto;
+            background-color: #ccc;
+            padding: 50px 0px;
+        }
+        input,select {
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            width: 80%;
+            margin-bottom: 20px;
+            
+          }
+        label{
+           display: flex;
+           margin-left: 60px;
+        }
+        
+        button{
+            padding: 15px;
+            font-size: 20px;
+            width: 80%;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: rgb(156, 235, 156);
+        }
+        button:hover{
+            background-color: rgb(3, 144, 3);
+            color: #ccc;
+            cursor: pointer;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Voter Registration Form</h1>
+    <form name="voterForm" onsubmit="return validateForm()">
+        <label for="firstName">First Name <span class="red">*</span>:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="midName">Middle Name<span class="red">*</span>:</label><br>
+        <input type="text" id="midName" name="midName" required><br><br>
+        
+        <label for="lastName">Last Name<span class="red">*</span>:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        
+        <label for="age">Date Of Birth<span class="red">*</span>:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="mobile">Mobile No.<span class="red">*</span>:</label><br>
+        <input type="number" name="mob" id="mob" required><br><br>
+
+        <label for="email">Email<span class="red">*</span>:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="file">Upload Address proof<span class="red">*</span>:</label><br>
+        <input type="file" id="myFile" name="filename"><br><br>
+
+        <label for="state">State<span class="red">*</span>:</label><br>
+        <select id="state" name="state" required>
+            <option value="" selected disabled> select </option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Puducherry">Puducherry</option>
+        </select><br><br>
+
+        <label for="dist">District<span class="red">*</span>:</label><br>
+        <input type="text" id="district" name="district" required><br><br>
+
+        <label for="assembly">Assembly Constituency<span class="red">*</span>:</label><br>
+        <input type="text" id="assembly" name="assembly" required><br><br>
+        
+        <label for="address">Address<span class="red">*</span>:</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
